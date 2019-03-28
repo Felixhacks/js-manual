@@ -1,0 +1,110 @@
+@import "compass/css3";
+
+$blue: #0095dd;
+$red: #e74c3c;
+
+body {
+  background: #ecf0f1;  
+}
+
+h1 {
+  color: $blue;
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+
+hr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+}
+
+ul a { 
+  text-decoration: none; 
+  &:hover { text-decoration: underline; }
+}
+
+.nav {
+  display: inline-block;
+  vertical-align: top;
+  
+  h4 { text-align: center; }
+  
+  a {
+    color: #333;
+    font-size: .85em;
+  } 
+}
+
+.section {
+  padding: 1.5em;
+  
+  h3 {
+    color: $blue;
+    display: inline-block;
+    font-size: 1em;
+  }
+  
+  a {
+    color: #333;
+    font-size: .85em;
+  } 
+  
+  .up { color: $red; }
+}
+
+
+//code styles
+.syntax{
+  background: #f4f7f8;
+  color: #558ABB;
+  margin: 10px 0;
+  border:solid thin #ddd;
+}
+.syntax span{
+  counter-increment: linecounter;
+}
+.syntax span:before{
+  content: counter(linecounter);
+  width: 1.2em;
+  text-align:center;
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  margin-right: 10px;
+  font-style:normal !important;
+  color:#555 !important;
+}
+#template {
+  display: none; }
+
+.num {
+  font-weight: 600;
+  color: #d0782a; }
+
+[class*=var] {
+  font-weight: 600; }
+
+.clr {
+  border-radius: 1px;
+  color: white;
+  font-weight: 400; }
+
+.str, .str i {
+  color: #ddca7e !important;
+  font-weight: 400 !important; }
+
+.reg, .reg i {
+  color: #ddca7e !important;
+  font-weight: 500 !important}
+
+.cmnt, .cmnt i {
+  color: #bbb !important; 
+  font-weight: 400 !important; }
+
+@media (max-width: 400px) {
+  .syntax {
+    font-size: 12px; } 
+}
